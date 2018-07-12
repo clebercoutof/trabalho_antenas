@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.26)  12 JUL 2018 17:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.26)  12 JUL 2018 18:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1570,32 +1570,29 @@ l.128
 
 
 ] (./main.lof)pdfTeX warning (ext4): destination with the same identifier (name
-{page.2}) has been already used, duplicate ignored
+{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.132 \cleardoublepage
-                       [2] (./main.lot) [3
-
-] [4
-
-] [5
-
-] [6
-
-] (./main.toc) [7]
-[8
-
-]
+l.144 \include{capitulos/introducao}
+                                     [1]
 \openout2 = `capitulos/introducao.aux'.
 
- (./capitulos/introducao.tex
-<figs/ponto_a.png, id=79, 566.115pt x 215.80624pt>
+ (./capitulos/introducao.texpdfTeX warning (ext4): destination with the same id
+entifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.6 \chapter
+            *[Introdução]{Introdução} [2
+
+
+]
+<figs/ponto_a.png, id=45, 566.115pt x 215.80624pt>
 File: figs/ponto_a.png Graphic file (type png)
  <use figs/ponto_a.png>
 Package pdftex.def Info: figs/ponto_a.png used on input line 21.
 (pdftex.def)             Requested size: 218.39806pt x 83.25194pt.
 
-<figs/ponto_b.png, id=80, 548.0475pt x 191.71625pt>
+<figs/ponto_b.png, id=46, 548.0475pt x 191.71625pt>
 File: figs/ponto_b.png Graphic file (type png)
  <use figs/ponto_b.png>
 Package pdftex.def Info: figs/ponto_b.png used on input line 26.
@@ -1607,77 +1604,65 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 34.
-)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.162 \include{capitulos/introducao}
-                                     [1
-
-
- <./figs/ponto_a.png> <./figs/ponto_b.png>]
+) [3 <./figs/ponto_a.png> <./figs/ponto_b.png>]
 \openout2 = `capitulos/desenvolvimento.aux'.
 
- (./capitulos/desenvolvimento.texpdfTeX warning (ext4): destination with the sa
-me identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {Desenvolvimento}\label{cap:CnptDsng} [2
+ (./capitulos/desenvolvimento.tex [4
 
 
 
 ]
-<figs/obs_cam.png, id=90, 1095.09125pt x 235.88126pt>
+<figs/obs_cam.png, id=60, 1095.09125pt x 235.88126pt>
 File: figs/obs_cam.png Graphic file (type png)
  <use figs/obs_cam.png>
-Package pdftex.def Info: figs/obs_cam.png used on input line 7.
+Package pdftex.def Info: figs/obs_cam.png used on input line 10.
 (pdftex.def)             Requested size: 455.0pt x 98.00766pt.
 
 
-Package caption Warning: \label without proper reference on input line 19.
+Package caption Warning: \label without proper reference on input line 21.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:obs_raio' on page 3 undefined on input line 14.
+LaTeX Warning: Reference `fig:obs_raio' on page 5 undefined on input line 17.
 
-<figs/obs_raio.png, id=92, 406.51875pt x 250.9375pt>
+<figs/obs_raio.png, id=62, 406.51875pt x 250.9375pt>
 File: figs/obs_raio.png Graphic file (type png)
  <use figs/obs_raio.png>
-Package pdftex.def Info: figs/obs_raio.png used on input line 18.
+Package pdftex.def Info: figs/obs_raio.png used on input line 20.
 (pdftex.def)             Requested size: 181.99722pt x 112.34264pt.
-)pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.164 \include{capitulos/desenvolvimento}
-                                          [3 <./figs/obs_cam.png> <./figs/obs_r
-aio.png>]
+
+[5 <./figs/obs_cam.png> <./figs/obs_raio.png>]
+<figs/rf_img.png, id=71, 528.97626pt x 443.6575pt>
+File: figs/rf_img.png Graphic file (type png)
+ <use figs/rf_img.png>
+Package pdftex.def Info: figs/rf_img.png used on input line 43.
+(pdftex.def)             Requested size: 273.00278pt x 228.97018pt.
+
+<figs/graf_ate.png, id=72, 658.46pt x 528.97626pt>
+File: figs/graf_ate.png Graphic file (type png)
+ <use figs/graf_ate.png>
+Package pdftex.def Info: figs/graf_ate.png used on input line 56.
+(pdftex.def)             Requested size: 364.00139pt x 292.43106pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 65.
+
+[6 <./figs/rf_img.png>]) [7 <./figs/graf_ate.png>]
 \openout2 = `capitulos/conclusao.aux'.
 
- (./capitulos/conclusao.texpdfTeX warning (ext4): destination with the same ide
-ntifier (name{page.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {Conclusão e Trabalhos Futuros}\label{cap:conclusao} [4
+ (./capitulos/conclusao.tex
+[8
 
 
 
-])pdfTeX warning (ext4): destination with the same identifier (name{page.5}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.166 \include{capitulos/conclusao}
-                                    [5]
+]) [9]
 \openout2 = `postextual/referencias.aux'.
 
- (./postextual/referencias.tex)pdfTeX warning (ext4): destination with the same
- identifier (name{page.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.173 \include{postextual/referencias}
-                                       [6
+ (./postextual/referencias.tex) [10
 
 
 ] 
@@ -1690,47 +1675,44 @@ This document will not have a glossary.
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
-\tf@lot=\write8
-\openout8 = `main.lot'.
-
-\tf@toc=\write9
-\openout9 = `main.toc'.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
 (./main.aux (./pretextual/capa.aux) (./capitulos/introducao.aux)
 (./capitulos/desenvolvimento.aux) (./capitulos/conclusao.aux)
 (./postextual/referencias.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 188.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 170.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 170.
  ) 
 Here is how much of TeX's memory you used:
- 20309 strings out of 493029
- 308615 string characters out of 6136234
- 630176 words of memory out of 5000000
- 23307 multiletter control sequences out of 15000+600000
- 65044 words of font info for 80 fonts, out of 8000000 for 9000
+ 20345 strings out of 493029
+ 309166 string characters out of 6136234
+ 632553 words of memory out of 5000000
+ 23323 multiletter control sequences out of 15000+600000
+ 70144 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,12n,79p,1949b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm
-/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (16 pages, 918089 bytes).
+ 51i,13n,79p,1949b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/l
+m/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi
+12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/font
+s/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/l
+msy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on main.pdf (13 pages, 1161382 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
- 20074 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 209 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 22140 words of extra memory for PDF output out of 24883 (max. 10000000)
 

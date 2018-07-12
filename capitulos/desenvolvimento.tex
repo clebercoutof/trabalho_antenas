@@ -36,21 +36,11 @@ O cálculo do fator $\alpha$ relaciona a frequência $f$, o raio de curvatura da
 \alpha = 0,0818\dfrac{1}{\sqrt[6]{f}}\sqrt[3]{r}\sqrt{\dfrac{d_1+d_2}{d_1*d_2}}
 \end{equation}
 
-A atenuação é encontrada com o $\alpha$ e a relação entre os fatores  $H_c$ e $r_f$ por meio do gráfico 5 \ref{fig:graf_ate}.
+A atenuação é encontrada com o $\alpha$ e a relação entre os fatores  $H_c$ e $r_f$ por meio do gráfico 5. Onde $H_c$ representa a diferença entre ponto máximo do obstáculo e o nivelamento das antenas, enquanto $r_f$  é chamado de raio de \textit{fresnel}, sendo calculado com as mesmas distâncias $d_1$ e $d_2$. A relação é encontrada como mostrado na figura 6.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=.8\textwidth]{graf_ate.png}
-	\label{fig:graf_ate}
-	\caption{Gráfico de atenuação}
-	%\source{Própria}
-\end{figure} 
-
-$H_c$ representa a diferença entre ponto máximo do obstáculo e o nivelamento das antenas, enquanto $r_f$  é chamado de raio de \textit{fresnel}, sendo calculado com as mesmas distâncias $d_1$ e $d_2$. A relação é encontrada como mostrado na figura 6.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=.4\textwidth]{rf_img.png}
+	\includegraphics[width=.6\textwidth]{rf_img.png}
 	\label{fig:rf_img}
 	\caption{Modelo da zona de \textit{Fresnel}}
 	%\source{Própria}
@@ -61,14 +51,34 @@ O cálculo de $r_f$ se dá por:
 r_f = \sqrt{\dfrac{n\lambda d_1 d_2}{d_1 + d_2}}
 \end{equation}
 
-Onde o valor de $n$ foi fornecido como sendo igual a $1$.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.8\textwidth]{graf_ate.png}
+	\label{fig:graf_ate}
+	\caption{Gráfico de atenuação}
+	%\source{Própria}
+\end{figure} 
+
+Onde o valor de $n$ foi fornecido como sendo igual a $1$ e com os valores mostrados na tabela e a análise do gráfico foi encontrado um valor de atenuação do obstáculo de $22,5dB$.
+
+\begin{center}
+	\begin{table}[]
+		\begin{tabular}{|l|l|}
+			\hline
+			Rf    & 8,866 \\ \hline
+			Hc    & 5     \\ \hline
+			Hc/rf & 8,866 \\ \hline
+		\end{tabular}
+	\end{table}
+\end{center}
+
 
 \section{Atenuação no espaço livre}
-
 O sinal também sofrerá atenuação ao ser transmitido no espaço livre, o cálculo da atenuação $L$ se deu pela seguinte equação:
 \begin{equation}
 L = 32,45 +20(\log_{10}(d_1+d_2) + \log_{10}f)
 \end{equation}
 
+O valor encontrado foi de $L = 91,43dB$.
 
-
+\section{Escolha da Antena}
