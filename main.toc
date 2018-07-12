@@ -5,11 +5,10 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter*.12}
-\contentsline {section}{Motiva\IeC {\c c}\IeC {\~a}o}{2}{section*.13}
-\contentsline {section}{Objetivos}{2}{section*.14}
-\contentsline {section}{Organiza\IeC {\c c}\IeC {\~a}o do documento}{2}{section*.15}
+\contentsline {chapter}{Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter*.7}
+\contentsline {section}{Motiva\IeC {\c c}\IeC {\~a}o}{1}{section*.8}
+\contentsline {section}{Objetivos}{1}{section*.9}
+\contentsline {section}{Organiza\IeC {\c c}\IeC {\~a}o do documento}{1}{section*.10}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Concept And Design}}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Arquitetura Geral}{3}{section.1.1}
@@ -30,6 +29,3 @@
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Conclus\IeC {\~a}o e Trabalhos Futuros}}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}Trabalhos Futuros}{11}{section.2.1}
 \vspace {\cftbeforechapterskip }
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{13}{section*.21}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
