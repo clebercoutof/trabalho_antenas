@@ -7,7 +7,7 @@ O primeiro passado adotado foi a análise dos pontos, verificando se entre os do
 	\includegraphics[width=1\textwidth]{obs_cam.png}
 	\caption{Gráfico de obstáculo}
 	\label{fig:obs_cam}
-	\source{Própria}
+	%\source{Fornecido junto com os pontos}
 \end{figure} 
 
 Por meio da análise do gráfico, fica evidenciado que entre os dois pontos existe um grande obstáculo arredondado, assim sendo necessário calcular o seu raio de curvatura e a partir disso ver o quanto ele irá interferir na transmissão.
@@ -15,18 +15,18 @@ Por meio da análise do gráfico, fica evidenciado que entre os dois pontos exis
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=1\textwidth]{obs_raio.png}
-	\caption{Gráfico de obstáculo}
+	\includegraphics[width=.4\textwidth]{obs_raio.png}
 	\label{fig:obs_raio}
 	\caption{Curvatura parabólica utilizada para aproximação}
-	\source{Própria}
+	%\source{Própria}
 \end{figure} 
 
 O raio $r$ da parábola será calculado o $\alpha$ que possibilita encontrar quantos decibéis de interferência o obstáculo irá causar. O cálculo do raio $r$ é feito utilizando a seguinte formula:
 \begin{equation}
-r = {x^2/8*y}*10^{-3}
+r = \dfrac{x^2}{8y}*10^{-3}
 \end{equation}
 
+Onde $x$ representa a distância em metros entre os dois pontos de igual nível, sendo um em cada lado do pico considerado e $y$ representa a diferença de cota entre o pico do obstáculo e a curva de nível considerada para  medida $x$.
 
 
 
