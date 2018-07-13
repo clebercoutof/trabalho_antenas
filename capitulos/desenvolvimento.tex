@@ -28,15 +28,15 @@ O raio $r$ da parábola será calculado o $\alpha$ que possibilita encontrar qua
 r = \dfrac{x^2}{8y}*10^{-3}
 \end{equation}
 
-Onde $x$ representa a distância em metros entre os dois pontos de igual nível, sendo um em cada lado do pico considerado e $y$ representa a diferença de cota entre o pico do obstáculo e a curva de nível considerada para  medida $x$.
+Onde $x$ representa a distância em metros entre os dois pontos de igual nível, sendo um em cada lado do pico considerado e $y$ representa a diferença de cota entre o pico do obstáculo e a curva de nível considerada para  medida $x$. Com os dados de $x = 325m$ e $y = 7m$, o valor encontrado foi de $r = 1,886$
 
 \section{Atenuação do Obstáculo}
-O cálculo do fator $\alpha$ relaciona a frequência $f$, o raio de curvatura da parábola $r$, a distância entre o vértice do obstáculo ao ponto de transmissão $d_1$ e a distância entre o vértice do obstáculo ao ponto de recepção $d_2$, ambas em \textit{Km}.
+O cálculo do fator $\alpha$ relaciona a frequência $f$, o raio de curvatura da parábola $r$, a distância entre o vértice do obstáculo ao ponto de transmissão $d_1 = 0.475$ e a distância entre o vértice do obstáculo ao ponto de recepção $d_2 = 0.492 $, ambas em \textit{Km}.
 \begin{equation}
 \alpha = 0,0818\dfrac{1}{\sqrt[6]{f}}\sqrt[3]{r}\sqrt{\dfrac{d_1+d_2}{d_1*d_2}}
 \end{equation}
 
-A atenuação é encontrada com o $\alpha$ e a relação entre os fatores  $H_c$ e $r_f$ por meio do gráfico 5. Onde $H_c$ representa a diferença entre ponto máximo do obstáculo e o nivelamento das antenas, enquanto $r_f$  é chamado de raio de \textit{fresnel}, sendo calculado com as mesmas distâncias $d_1$ e $d_2$. A relação é encontrada como mostrado na figura 6.
+A atenuação é encontrada a partir de $\alpha$, que foi calculado com um valor de \textit{0.67} e a relação entre os fatores  $H_c$ e $r_f$ por meio do gráfico 5. Onde $H_c$ representa a diferença entre ponto máximo do obstáculo e o nivelamento das antenas, enquanto $r_f$  é chamado de raio de \textit{fresnel}, sendo calculado com as mesmas distâncias $d_1$ e $d_2$. A relação é encontrada como mostrado na figura 6.
 
 \begin{figure}[h]
 	\centering
@@ -67,18 +67,49 @@ Onde o valor de $n$ foi fornecido como sendo igual a $1$ e com os valores mostra
 			\hline
 			Rf    & 8,866 \\ \hline
 			Hc    & 5     \\ \hline
-			Hc/rf & 8,866 \\ \hline
+			Hc/rf & 0,563 \\ \hline
 		\end{tabular}
 	\end{table}
 \end{center}
 
 
 \section{Atenuação no espaço livre}
-O sinal também sofrerá atenuação ao ser transmitido no espaço livre, o cálculo da atenuação $L$ se deu pela seguinte equação:
+O sinal também sofrerá atenuação ao ser transmitido no espaço livre, o cálculo da atenuação $L$ se dá por meio da fórmula de \textit{Fris}:
 \begin{equation}
 L = 32,45 +20(\log_{10}(d_1+d_2) + \log_{10}f)
 \end{equation}
 
 O valor encontrado foi de $L = 91,43dB$.
 
-\section{Escolha da Antena}
+\section{Atenuação total}
+A atenuação total é a soma da atenuação no espaço livre com a atenuação do obstáculo, assim :
+\begin{equation}
+L_{tot} = L + L_{obstaculo} = 91,43 + 22,5 = 113,9dB 
+\end{equation}
+\section{Escolha do tranmissor e da antena}
+ A escolha dos módulos e da antena se deu baseado na frequência escolhida para os cálculos e na versatilidade de cada dispositivo. 
+ 
+ O modelo das antenas foi o \textit{Yagi(AirMax Antenna 900Mhz)},devido a sua faixa de trabalho e alta potência.
+ 
+ O modelo do transmissor foi o \textit{Ubiquiti Networks(Rocket M9)} pot ser recomendado para trabalhar em conjunto com o modelo de antena \textit{Yagi}. 
+\section{Receptor}
+O receptor é encontrado à partir das potências das antenas, do módulo tranmissor e das perdas durante a transmissão. Sua potência é calculada da seguinte forma:
+%\begin{equation}
+%	P_{receptor} = P_{antena_tx} + P_{antena_rx} + P_{transmissor} - L_{tot}
+%\end{equation}
+
+A mesma antena utilizada para transmissão é utilizada para recepção, os dados da sua potência estão disponíveis nos seu \textit{datasheet} onde $P_{antena_{tx}} = P_{antena_{rx}} = 19dBi$. A potência do transmissõr também está disponível no datasheet, onde $P_{transmissor} = 28dBm$. O valor encontrado para potência do receptor foi de $	P_{receptor} = -47.9dBi$
+
+Com o valor de $-47.9dBi$, o módulo \textit{Ubiquiti Networks(Rocket M9)} também poderá ser utilizado para recepção, tornando o sistema mais simplificado já que ambos receptores e transmissores estarão utilizando antenas recomendadas no datasheet.
+
+\chapter{Resultados}
+Todos os valores utilizados e calculados estão registrados na figura a seguir:
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{resultados.jpeg}
+	\label{fig:result}
+	\caption{Variáveis do projeto}
+	%\source{Própria}
+\end{figure} 
+
+
